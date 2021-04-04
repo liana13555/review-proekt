@@ -1,1 +1,1 @@
-# review-proekt
+# practice-proekt
