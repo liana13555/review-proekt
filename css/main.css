@@ -105,6 +105,8 @@ a {
     display: -ms-flexbox;
     display: flex;
     min-width: 1090px;
+    width: 100%;
+    margin-bottom: 40px;
     padding-top: 50px;
     padding-bottom: 51px;
     padding-left: 82px;
