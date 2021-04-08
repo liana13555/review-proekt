@@ -1,0 +1,79 @@
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+article {
+  background: white;
+  color: white;
+  font-size: 2.25rem;
+  margin: .5rem;
+  padding: 2%;
+  position: relative;
+  text-align: center;
+}
+
+.slider-single article {
+  line-height: 10rem;
+}
+
+.slider-nav article::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+.slider-nav article span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider-nav .slick-slide { cursor: pointer; }
+
+.slick-slide.is-active article {
+  color: #c00;
+  background-color: #fff
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.slick-slider {
+//   position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.slick-track:before, .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
